@@ -1,0 +1,8 @@
+<svg width="24" height="15" viewBox="0 0 24 15" xmlns="http://www.w3.org/2000/svg">
+    <title>NavIcon</title>
+    <g fill="#69798F" fill-rule="evenodd">
+        <rect y="5.96" width="20" height="2.8" rx="1.4"/>
+        <rect y="11.366" width="16" height="2.8" rx="1.4"/>
+        <rect width="24" height="2.8" rx="1.4"/>
+    </g>
+</svg>

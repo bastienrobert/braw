@@ -1,0 +1,76 @@
+<!-- <p id="notice"><%= notice %></p>
+
+<h1>Hotels</h1>
+
+<table>
+  <tbody>
+    <% @hotels.each do |hotel| %>
+      <tr>
+        <td><%= hotel.title %></td>
+        <td><%= hotel.description %></td>
+        <td><%= hotel.note %></td>
+        <td><%= link_to 'Show', hotel %></td>
+        <td><%= link_to 'Edit', edit_hotel_path(hotel) %></td>
+        <td><%= link_to 'Destroy', hotel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hotel', new_hotel_path %>
+ -->
+
+
+  <header>
+    <form accept-charset="UTF-8" method="get">
+      <a href="index.html"><img src="assets/icons/logo.svg" alt="Logo"></a>
+          <input type="text" name="search" placeholder="SEARCH">
+          <input type="submit" value="">
+    </form>
+    <div>
+      <a href="add.html"><%= link_to 'New Hotel', new_hotel_path %></a>
+      <a href="#">A propos</a>
+      <a href="login.html">Login</a>
+    </div>
+  </header>
+  <section id="list">
+    <% @hotels.each do |hotel| %>
+      <div class="element">
+        <div class="element__left">
+          <img src="assets/pic.jpg" alt="Affiche" class="element__left-img">
+        </div>
+        <div class="element__right">
+          <h3><%= hotel.title %></h3>
+          <span class="element__right-stars">
+            <% case hotel.note %>
+            <% when 1 %>
+                <%= image_tag 'icons/star-f.svg' %>
+            <% when 2 %>
+                <%= image_tag 'icons/star-f.svg' %>
+                <%= image_tag 'icons/star-f.svg' %>
+            <% when 3 %>
+                <%= image_tag 'icons/star-f.svg' %>
+                <%= image_tag 'icons/star-f.svg' %>
+                <%= image_tag 'icons/star-f.svg' %>
+            <% when 4 %>
+                <%= image_tag 'icons/star-f.svg' %>
+                <%= image_tag 'icons/star-f.svg' %>
+                <%= image_tag 'icons/star-f.svg' %>
+                <%= image_tag 'icons/star-f.svg' %>
+            <% when 5 %>
+                <%= image_tag 'icons/star-f.svg' %>
+                <%= image_tag 'icons/star-f.svg' %>
+                <%= image_tag 'icons/star-f.svg' %>
+                <%= image_tag 'icons/star-f.svg' %>
+                <%= image_tag 'icons/star-f.svg' %>
+           <% end %>
+          </span>
+
+          <!-- <h4>par <a href="#">Utilisateur</a></h4> -->
+          <p><td><%= hotel.description %></td></p>
+        </div>
+      </div>
+    <% end %>
+  </section>

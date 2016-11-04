@@ -1,0 +1,19 @@
+<svg width="22" height="17" viewBox="0 0 22 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Gallery</title>
+    <defs>
+        <rect id="a" x="2.496" width="19.504" height="14.478" rx="2"/>
+        <mask id="c" x="0" y="0" width="19.504" height="14.478" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <rect id="b" y="2.335" width="19.504" height="14.478" rx="2"/>
+        <mask id="d" x="0" y="0" width="19.504" height="14.478" fill="#fff">
+            <use xlink:href="#b"/>
+        </mask>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <use stroke="#69798F" mask="url(#c)" stroke-width="3" xlink:href="#a"/>
+        <use stroke="#69798F" mask="url(#d)" stroke-width="3" fill="#FFF" xlink:href="#b"/>
+        <path fill="#69798F" d="M7.872 16.097l4.409-4.455 1.556 1.31 3.37-3.144 1.816 1.834v4.455z"/>
+        <ellipse fill="#69798F" cx="12.664" cy="8.849" rx="1.447" ry="1.463"/>
+    </g>
+</svg>
