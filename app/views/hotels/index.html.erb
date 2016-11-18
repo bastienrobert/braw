@@ -25,7 +25,7 @@
 
   <header>
     <form accept-charset="UTF-8" method="get">
-      <a href="/"><img src="assets/icons/logo.svg" alt="Logo"></a>
+      <a href="/"><%= image_tag image_path('icons/logo.svg'), alt: :logo %></a>
           <!-- <input type="text" name="search" placeholder="SEARCH">
           <input type="submit" value=""> -->
     </form>
@@ -38,32 +38,32 @@
     <% @hotels.each do |hotel| %>
       <div class="element">
         <div class="element__left">
-          <img src="assets/pic.jpg" alt="Affiche" class="element__left-img">
+          <%= image_tag image_path('pic.svg'), alt: :affiche, class: 'element__left-img' %>
         </div>
         <div class="element__right">
           <h3><%= hotel.title %></h3>
           <span class="element__right-stars">
             <% case hotel.note %>
             <% when 1 %>
-                <%= image_tag 'icons/star-f.svg' %>
+                <%= image_tag image_path('icons/star-f.svg') %>
             <% when 2 %>
-                <%= image_tag 'icons/star-f.svg' %>
-                <%= image_tag 'icons/star-f.svg' %>
+                <%= image_tag image_path('icons/star-f.svg') %>
+                <%= image_tag image_path('icons/star-f.svg') %>
             <% when 3 %>
-                <%= image_tag 'icons/star-f.svg' %>
-                <%= image_tag 'icons/star-f.svg' %>
-                <%= image_tag 'icons/star-f.svg' %>
+                <%= image_tag image_path('icons/star-f.svg') %>
+                <%= image_tag image_path('icons/star-f.svg') %>
+                <%= image_tag image_path('icons/star-f.svg') %>
             <% when 4 %>
-                <%= image_tag 'icons/star-f.svg' %>
-                <%= image_tag 'icons/star-f.svg' %>
-                <%= image_tag 'icons/star-f.svg' %>
-                <%= image_tag 'icons/star-f.svg' %>
+                <%= image_tag image_path('icons/star-f.svg') %>
+                <%= image_tag image_path('icons/star-f.svg') %>
+                <%= image_tag image_path('icons/star-f.svg') %>
+                <%= image_tag image_path('icons/star-f.svg') %>
             <% when 5 %>
-                <%= image_tag 'icons/star-f.svg' %>
-                <%= image_tag 'icons/star-f.svg' %>
-                <%= image_tag 'icons/star-f.svg' %>
-                <%= image_tag 'icons/star-f.svg' %>
-                <%= image_tag 'icons/star-f.svg' %>
+                <%= image_tag image_path('icons/star-f.svg') %>
+                <%= image_tag image_path('icons/star-f.svg') %>
+                <%= image_tag image_path('icons/star-f.svg') %>
+                <%= image_tag image_path('icons/star-f.svg') %>
+                <%= image_tag image_path('icons/star-f.svg') %>
            <% end %>
           </span>
 
