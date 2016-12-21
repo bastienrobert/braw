@@ -1,0 +1,14 @@
+<header>
+  <form accept-charset="UTF-8" method="get">
+    <a href="../../"><%= image_tag image_path('icons/logo.svg'), alt: :logo %></a>
+  </form>
+  <div>
+    <a href="add.html"><%= link_to 'New Hotel', new_hotel_path %></a>
+    <a href="#">A propos</a>
+  </div>
+</header>
+<section class="about">
+  <h1>About</h1>
+  <p>This app has been created to learn Ruby on Rails @ IUT Bordeaux Montaigne.</p>
+  <p>It has been developped w/ <%= image_tag image_path('icons/heart.svg'), alt: :logo %> by <a href="//bastienrobert.fr" target="_blank">Bastien Robert</a>.</p>
+</section>
