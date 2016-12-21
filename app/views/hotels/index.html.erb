@@ -38,7 +38,7 @@
     <% @hotels.each do |hotel| %>
       <div class="element">
         <div class="element__left">
-          <%= image_tag image_path('pic.jpg'), alt: :affiche, class: 'element__left-img' %>
+          <%= image_tag hotel.image.url(:medium), class: 'element__left-img' %>
         </div>
         <div class="element__right">
           <h3><%= hotel.title %></h3>

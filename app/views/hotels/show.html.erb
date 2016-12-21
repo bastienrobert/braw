@@ -15,5 +15,10 @@
   <%= @hotel.note %>
 </p>
 
+<p>
+  <strong>IMAGE : </strong>
+  <%= image_tag @hotel.image.url(:medium) %>
+</p>
+
 <%= link_to 'Edit', edit_hotel_path(@hotel) %> |
 <%= link_to 'Back', hotels_path %>
